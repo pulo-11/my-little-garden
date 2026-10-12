@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my little garden</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="garden-page">
+
+  <main class="garden-layout">
+
+    <header class="garden-header">
+      <div>
+        <div class="tiny-label">your tiny world</div>
+        <h1>my little garden</h1>
+      </div>
+
+      <div class="garden-header-actions">
+        <div class="coin-display">
+          <span class="coin-icon"></span>
+          <strong id="coinCount">0</strong>
+        </div>
+
+        <button class="small-button" onclick="location.href='index.html'">
+          home
+        </button>
+      </div>
+    </header>
+
+
+    <section class="garden-board" id="gardenBoard">
+
+      <div class="sky">
+
+        <div class="sun"></div>
+
+        <div class="cloud cloud-a">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="cloud cloud-b">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="cloud cloud-c">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="moon"></div>
+
+        <div class="stars">
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+
+        <div class="rain-layer" id="rainLayer"></div>
+      </div>
+
+
+      <div class="far-hill"></div>
+      <div class="near-hill"></div>
+
+
+      <div class="garden-field" id="gardenField">
+
+        <div class="grass-patch patch-one"></div>
+        <div class="grass-patch patch-two"></div>
+        <div class="grass-patch patch-three"></div>
+
+        <div class="tiny-bush bush-one">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="tiny-bush bush-two">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="garden-rock rock-one"></div>
+        <div class="garden-rock rock-two"></div>
+
+        <div class="little-mushroom mushroom-one">
+          <span class="mushroom-cap"></span>
+          <span class="mushroom-stem"></span>
+        </div>
+
+        <div class="little-mushroom mushroom-two">
+          <span class="mushroom-cap"></span>
+          <span class="mushroom-stem"></span>
+        </div>
+
+        <div class="grass-detail grass-one"></div>
+        <div class="grass-detail grass-two"></div>
+        <div class="grass-detail grass-three"></div>
+        <div class="grass-detail grass-four"></div>
+
+        <div id="plantedFlowers"></div>
+
+
+        <div class="guide-character">
+          <div id="gardenGuideAvatar" class="garden-guide-avatar"></div>
+
+          <div class="guide-speech" id="guideSpeech">
+            hii, how are youu&lt;3
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pond-decoration">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </section>
+
+
+    <section class="garden-controls">
+
+      <div class="weather-controls">
+
+        <button class="weather-button active" data-weather="day" onclick="setWeather('day')">
+          <span class="weather-sun-icon"></span>
+          day
+        </button>
+
+        <button class="weather-button" data-weather="evening" onclick="setWeather('evening')">
+          <span class="weather-evening-icon"></span>
+          evening
+        </button>
+
+        <button class="weather-button" data-weather="night" onclick="setWeather('night')">
+          <span class="weather-moon-icon"></span>
+          night
+        </button>
+
+        <button class="weather-button" data-weather="rain" onclick="setWeather('rain')">
+          <span class="weather-rain-icon"></span>
+          rain
+        </button>
+
+      </div>
+
+      <div class="garden-actions">
+
+        <button class="game-button" onclick="location.href='games.html'">
+          <span class="button-spark"></span>
+          play games
+        </button>
+
+        <button class="shop-button" onclick="location.href='shop.html'">
+          <span class="button-flower-icon"></span>
+          flower shop
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
