@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flower shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="shop-page">
+
+  <main class="shop-layout">
+
+    <header class="shop-header">
+      <div>
+        <div class="tiny-label">pick something pretty</div>
+        <h1>flower shop</h1>
+      </div>
+
+      <div class="shop-header-actions">
+        <div class="coin-display">
+          <span class="coin-icon"></span>
+          <strong id="shopCoins">0</strong>
+        </div>
+
+        <button class="small-button" onclick="location.href='garden.html'">
+          back to garden
+        </button>
+      </div>
+    </header>
+
+
+    <p class="shop-intro">
+      choose a flower, pick a colour, then plant it in your garden
+    </p>
+
+
+    <section class="flower-grid">
+
+      <button class="flower-card tulip-card" onclick="openFlowerShop('tulip')">
+        <div class="flower-preview tulip-preview">
+          <span class="flower-stem"></span>
+          <span class="leaf leaf-left"></span>
+          <span class="tulip-head"></span>
+        </div>
+
+        <strong>tulip</strong>
+        <small>8 coins</small>
+      </button>
+
+
+      <button class="flower-card rose-card" onclick="openFlowerShop('rose')">
+        <div class="flower-preview rose-preview">
+          <span class="flower-stem"></span>
+          <span class="leaf leaf-left"></span>
+          <span class="leaf leaf-right"></span>
+          <span class="rose-head"></span>
+        </div>
+
+        <strong>rose</strong>
+        <small>12 coins</small>
+      </button>
+
+
+      <button class="flower-card daisy-card" onclick="openFlowerShop('daisy')">
+        <div class="flower-preview daisy-preview">
+          <span class="flower-stem"></span>
+          <span class="leaf leaf-left"></span>
+          <span class="daisy-head">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+            <b></b>
+          </span>
+        </div>
+
+        <strong>daisy</strong>
+        <small>6 coins</small>
+      </button>
+
+
+      <button class="flower-card cosmos-card" onclick="openFlowerShop('cosmos')">
+        <div class="flower-preview cosmos-preview">
+          <span class="flower-stem"></span>
+          <span class="leaf leaf-left"></span>
+          <span class="cosmos-head">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+            <b></b>
+          </span>
+        </div>
+
+        <strong>cosmos</strong>
+        <small>10 coins</small>
+      </button>
+
+
+      <button class="flower-card lavender-card" onclick="openFlowerShop('lavender')">
+        <div class="flower-preview lavender-preview">
+          <span class="lavender-stem"></span>
+          <span class="lavender-leaf leaf-a"></span>
+          <span class="lavender-leaf leaf-b"></span>
+
+          <span class="lavender-bloom bloom-a">
+            <i></i><i></i><i></i><i></i>
+          </span>
+
+          <span class="lavender-bloom bloom-b">
+            <i></i><i></i><i></i><i></i>
+          </span>
+
+          <span class="lavender-bloom bloom-c">
+            <i></i><i></i><i></i><i></i>
+          </span>
+        </div>
+
+        <strong>lavender</strong>
+        <small>10 coins</small>
+      </button>
+
+
+      <button class="flower-card sunflower-card" onclick="openFlowerShop('sunflower')">
+        <div class="flower-preview sunflower-preview">
+          <span class="flower-stem"></span>
+          <span class="leaf leaf-left"></span>
+          <span class="leaf leaf-right"></span>
+
+          <span class="sunflower-head">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+            <b></b>
+          </span>
+        </div>
+
+        <strong>sunflower</strong>
+        <small>14 coins</small>
+      </button>
+
+    </section>
+
+  </main>
+
+
+  <div class="flower-modal hidden" id="flowerModal">
+
+    <div class="flower-modal-card">
+
+      <button class="modal-close" onclick="closeFlowerShop()">×</button>
+
+      <div class="tiny-label">a little something</div>
+
+      <h2 id="modalFlowerName">tulip</h2>
+
+      <div class="modal-flower-stage" id="modalFlowerStage"></div>
+
+      <p>pick a colour</p>
+
+      <div class="colour-swatches" id="colourSwatches"></div>
+
+      <button class="plant-choice-button" id="buyFlowerButton">
+        choose this flower
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
