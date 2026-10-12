@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>playing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="play-page">
+
+  <main class="play-layout">
+
+    <header class="play-header">
+
+      <button class="small-button" onclick="location.href='games.html'">
+        games
+      </button>
+
+      <div class="play-stats">
+
+        <div class="stat-pill">
+          <small>time</small>
+          <strong id="timer">30</strong>
+        </div>
+
+        <div class="stat-pill">
+          <small>score</small>
+          <strong id="score">0</strong>
+        </div>
+
+      </div>
+
+    </header>
+
+
+    <section class="game-stage" id="gameStage">
+
+      <div class="stage-top">
+        <div class="stage-guide" id="stageGuide"></div>
+
+        <div class="stage-message" id="stageMessage">
+          let's play!
+        </div>
+      </div>
+
+      <div id="gameArea"></div>
+
+    </section>
+
+  </main>
+
+
+  <div class="result-overlay hidden" id="resultOverlay">
+
+    <div class="result-card">
+
+      <div class="result-sun"></div>
+
+      <div class="tiny-label">little garden complete</div>
+
+      <h1 id="resultTitle">good job</h1>
+
+      <div class="result-flower"></div>
+
+      <p>
+        you earned <strong id="earnedCoins">0</strong> coins.
+      </p>
+
+      <div class="result-buttons">
+
+        <button class="game-button" id="playAgainButton">
+          play again
+        </button>
+
+        <button class="shop-button" onclick="location.href='garden.html'">
+          back to garden
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
