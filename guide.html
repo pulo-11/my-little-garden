@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>choose your little guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="guide-page">
+
+  <main class="guide-screen">
+
+    <section class="guide-card">
+
+      <div class="tiny-label">before we begin</div>
+
+      <h1>choose your little guide</h1>
+
+      <p class="guide-intro">
+        someone will be waiting for you in the garden
+      </p>
+
+      <div class="guide-options">
+
+        <button class="guide-option" onclick="chooseGuide('bunny')">
+          <div class="guide-avatar bunny-avatar">
+            <span class="animal-ear bunny-ear-left"></span>
+            <span class="animal-ear bunny-ear-right"></span>
+
+            <span class="animal-head bunny-head">
+              <span class="animal-eye eye-left"></span>
+              <span class="animal-eye eye-right"></span>
+              <span class="bunny-nose"></span>
+              <span class="animal-cheek cheek-left"></span>
+              <span class="animal-cheek cheek-right"></span>
+            </span>
+          </div>
+
+          <strong>bunny</strong>
+        </button>
+
+        <button class="guide-option" onclick="chooseGuide('bear')">
+          <div class="guide-avatar bear-avatar">
+            <span class="animal-ear bear-ear-left"></span>
+            <span class="animal-ear bear-ear-right"></span>
+
+            <span class="animal-head bear-head">
+              <span class="animal-eye eye-left"></span>
+              <span class="animal-eye eye-right"></span>
+              <span class="bear-muzzle"></span>
+              <span class="bear-nose"></span>
+            </span>
+          </div>
+
+          <strong>bear</strong>
+        </button>
+
+        <button class="guide-option" onclick="chooseGuide('duck')">
+          <div class="guide-avatar duck-avatar">
+            <span class="animal-ear duck-tuft"></span>
+
+            <span class="animal-head duck-head">
+              <span class="animal-eye eye-left"></span>
+              <span class="animal-eye eye-right"></span>
+              <span class="duck-beak"></span>
+            </span>
+          </div>
+
+          <strong>duck</strong>
+        </button>
+
+      </div>
+
+      <div class="guide-footnote">
+        you can always choose another guide later
+      </div>
+
+    </section>
+
+  </main>
+
+  <script>
+    function chooseGuide(guide) {
+      localStorage.setItem("littleGardenGuide", guide);
+      sessionStorage.setItem("gardenFirstVisit", "true");
+      location.href = "garden.html";
+    }
+  </script>
+
+</body>
+</html>
