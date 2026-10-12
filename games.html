@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>little garden games</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="games-page">
+
+  <main class="games-layout">
+
+    <header class="games-header">
+
+      <div>
+        <div class="tiny-label">a tiny arcade</div>
+        <h1>little garden games</h1>
+        <p>play a little, collect some coins</p>
+      </div>
+
+      <div class="games-header-right">
+
+        <div class="coin-display">
+          <span class="coin-icon"></span>
+          <strong id="gameCoins">0</strong>
+        </div>
+
+        <button class="small-button" onclick="location.href='garden.html'">
+          garden
+        </button>
+
+      </div>
+
+    </header>
+
+
+    <section class="game-menu">
+
+      <button class="game-card memory-game-card" onclick="startGame('memory')">
+
+        <div class="game-card-decoration">
+          <span class="tiny-star star-one"></span>
+          <span class="tiny-star star-two"></span>
+        </div>
+
+        <div class="game-icon memory-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="game-card-text">
+          <span class="game-number">01</span>
+          <h2>little garden memory</h2>
+          <p>find all the matching little pairs</p>
+        </div>
+
+        <div class="game-play-label">play</div>
+
+      </button>
+
+
+      <button class="game-card firefly-game-card" onclick="startGame('fireflies')">
+
+        <div class="game-card-decoration">
+          <span class="tiny-star star-one"></span>
+          <span class="tiny-star star-two"></span>
+          <span class="tiny-star star-three"></span>
+        </div>
+
+        <div class="game-icon firefly-icon">
+          <span class="firefly-body"></span>
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+
+        <div class="game-card-text">
+          <span class="game-number">02</span>
+          <h2>catch the fireflies</h2>
+          <p>tap the glowing fireflies before time runs out</p>
+        </div>
+
+        <div class="game-play-label">play</div>
+
+      </button>
+
+
+      <button class="game-card petal-game-card" onclick="startGame('petals')">
+
+        <div class="game-card-decoration">
+          <span class="petal-decoration pd-one"></span>
+          <span class="petal-decoration pd-two"></span>
+          <span class="petal-decoration pd-three"></span>
+        </div>
+
+        <div class="game-icon petal-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="game-card-text">
+          <span class="game-number">03</span>
+          <h2>petal catch</h2>
+          <p>catch as many drifting petals as you can</p>
+        </div>
+
+        <div class="game-play-label">play</div>
+
+      </button>
+
+
+      <button class="game-card colour-game-card" onclick="startGame('colour')">
+
+        <div class="game-card-decoration">
+          <span class="colour-dot cd-one"></span>
+          <span class="colour-dot cd-two"></span>
+          <span class="colour-dot cd-three"></span>
+          <span class="colour-dot cd-four"></span>
+        </div>
+
+        <div class="game-icon colour-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="game-card-text">
+          <span class="game-number">04</span>
+          <h2>find the colour</h2>
+          <p>find every flower matching the colour you need</p>
+        </div>
+
+        <div class="game-play-label">play</div>
+
+      </button>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
